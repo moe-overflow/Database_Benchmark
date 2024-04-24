@@ -1,0 +1,13 @@
+{
+  "name" : "database-benchmark",
+  "version": "0.1",
+  "dependencies": [
+    {
+      "name": "spdlog"
+    },
+    {
+      "name": "mongo-cxx-driver"
+    }
+  ]
+
+}

@@ -1,0 +1,10 @@
+.vs/
+.idea/
+
+out/*
+build/*
+cmake-*
+
+CMakeSettings.json
+
+
