@@ -12,6 +12,9 @@ add_executable(
         mongodb_handler.cpp
         mongodb_handler.hpp
 
+        sqlite_handler.hpp
+        sqlite_handler.cpp
+
 )
 
 include(${CMAKE_SOURCE_DIR}/cmake/system_link.cmake)
@@ -22,5 +25,7 @@ target_link_system_libraries(
     spdlog::spdlog
     $<IF:$<TARGET_EXISTS:mongo::bsoncxx_static>,mongo::bsoncxx_static,mongo::bsoncxx_shared>
     $<IF:$<TARGET_EXISTS:mongo::mongocxx_static>,mongo::mongocxx_static,mongo::mongocxx_shared>
+    unofficial::sqlite3::sqlite3
+	
 )
 

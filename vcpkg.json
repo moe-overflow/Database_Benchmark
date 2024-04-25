@@ -1,12 +1,20 @@
 {
-  "name" : "database-benchmark",
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "database-benchmark",
   "version": "0.1",
+  "builtin-baseline": "03329353b413041b124c4b2ee8b1d42b4a66abec",
   "dependencies": [
     {
-      "name": "spdlog"
+      "name": "spdlog",
+      "version>=": "1.13.0#1"
     },
     {
-      "name": "mongo-cxx-driver"
+      "name": "mongo-cxx-driver",
+      "version>=": "3.10.1"
+    },
+    {
+      "name": "sqlite3",
+      "version>=": "3.45.3"
     }
   ]
 
